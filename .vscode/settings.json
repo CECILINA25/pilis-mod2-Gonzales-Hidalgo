@@ -1,4 +1,9 @@
 {
+<<<<<<< Updated upstream
     "liveServer.settings.port": 5502,
     "livePreview.defaultPreviewPath": "/index.html"
+=======
+    "liveServer.settings.port": 5501,
+    "livePreview.defaultPreviewPath": "/home/cecilia/Documentos/Proyectos/DesafioSimulacro/index.html"
+>>>>>>> Stashed changes
 }

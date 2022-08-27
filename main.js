@@ -43,13 +43,15 @@ lat+"&lon=" +lon+"&appid=" + apiKey)
   console.log(description2);
 
   const  temp2=data.list[0].main.temp;
+
+  
   const humidity2  = data.list[0].main.humidity;
   const speed2 = data.list[0].wind;
   document.querySelector(".city2").innerText = "Clima en " + name2;
   document.querySelector(".icon2").src =
     "https://openweathermap.org/img/wn/" + icon2 + ".png";
   document.querySelector(".description").innerText = description2;
-  document.querySelector(".temp2").innerText =round((temp2-273)) + "°C";
+  document.querySelector(".temp2").innerText =temp2 + "°K";
   document.querySelector(".humidity2").innerText =
     "Humidity: " + humidity2 + "%";
   document.querySelector(".wind2").innerText =
@@ -87,6 +89,7 @@ let weather = {
         .then((data) => this.displayWeather(data));
     },
     displayWeather: function (data) {
+      console.log(data);
       const { name } = data;
       const { icon, description } = data.weather[0];
       const { temp, humidity } = data.main;

@@ -44,9 +44,7 @@ lat+"&lon=" +lon+"&appid=" + apiKey)
 
   const  temp2=data.list[0].main.temp;
   const nuevo2= (temp2- 273.15).toFixed(2)
-
   console.log(nuevo2);
-  
   const humidity2  = data.list[0].main.humidity;
   const speed2 = data.list[0].wind;
   document.querySelector(".city2").innerText = "Clima en " + name2;

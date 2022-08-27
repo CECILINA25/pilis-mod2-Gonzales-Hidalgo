@@ -1,4 +1,4 @@
-# Trayecto de Formación: FullStack Web Developer :trophy :
+# Trayecto de Formación: FullStack Web Developer :trophy:
 
 :package: **MODULO 2: TRABAJO FINAL**
 

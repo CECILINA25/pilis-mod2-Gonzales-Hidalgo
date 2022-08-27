@@ -12,6 +12,7 @@
 /* FUENTE */
 body {
     font-family: 'Poppins', sans-serif;
+    background:#7fb285;
 }
 
 /*-------------------------- */
@@ -24,8 +25,12 @@ body {
     overflow:hidden;
     padding: var(--padding-container);
     
+    
 }
 
+#evento{
+    background: #dcb3a0;
+}
 /* MAIN*/
 
 .hero {
@@ -37,6 +42,7 @@ body {
     display: grid;
     grid-template-rows: 100px 1fr;
     color: #fff;
+    
 }
 
 .hero::before {
@@ -469,3 +475,6 @@ form .form-group {
   }
   
   
+#contact{
+background-size: cover;
+}

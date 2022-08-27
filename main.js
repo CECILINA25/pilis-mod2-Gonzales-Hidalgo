@@ -25,20 +25,11 @@ lat+"&lon=" +lon+"&appid=" + apiKey)
 
 .then((response)=> response.json())
 .then((data)=>{ this.displayWeather(data)
-  console.log(data)
+  console.log(data);
 
 })    
 
  
-
-
-
-
-
-
-  
-
-
 
 
 
@@ -58,7 +49,7 @@ lat+"&lon=" +lon+"&appid=" + apiKey)
   document.querySelector(".icon2").src =
     "https://openweathermap.org/img/wn/" + icon2 + ".png";
   document.querySelector(".description").innerText = description2;
-  document.querySelector(".temp2").innerText = temp2 + "°C";
+  document.querySelector(".temp2").innerText =round((temp2-273)) + "°C";
   document.querySelector(".humidity2").innerText =
     "Humidity: " + humidity2 + "%";
   document.querySelector(".wind2").innerText =
@@ -110,7 +101,7 @@ let weather = {
       document.querySelector(".wind").innerText =
         "Wind speed: " + speed + " km/h";
       document.querySelector(".weather").classList.remove("loading");
-      document.body.style.backgroundImage =
+      document.getElementById("contact").style.backgroundImage =
         "url('https://source.unsplash.com/1600x900/?" + name + "')";
     },
     search: function () {

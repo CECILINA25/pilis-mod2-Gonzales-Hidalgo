@@ -246,6 +246,9 @@ form .form-group {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
+    color:white;
+    font-weight: bolder;
 }
 
 .subtitle-form{
@@ -292,6 +295,12 @@ form .form-group {
 
 
 }
+
+section.contact{
+    margin:0px;
+    width: 100%;
+    padding: var(--padding-container);
+    }
 /*-------------------------- */
 
 /* Testimony */

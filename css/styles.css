@@ -4,7 +4,7 @@
 /* custom properties  */
 :root {
     --padding-container: 100px 0;
-    --color-title:#7fb285 ;
+    --color-title:#719272;
 }
 /*-------------------------- */
 
@@ -320,6 +320,7 @@ section.contact{
     grid-template-columns: 50px 1fr 50px;
     gap: 1em;
     align-items: center;
+    height: 370px;
     
 }
 
@@ -364,6 +365,12 @@ section.contact{
 .testimony__arrow{
     width: 90%;
     cursor: pointer;
+}
+.subtitle2{
+    color: var(--color-title);
+    font-size: 2rem;
+    padding-top:120px;
+    padding-left: 80px;
 }
 
 /*-------------------------- */
@@ -498,3 +505,26 @@ section.contact{
     margin-left: 0%;
     margin-right:0%;
 }
+
+/* CONTACTO */
+#contact {
+    padding: 120px 0;
+  }
+  
+  .contact-form {
+    float: center;
+    width: 45%;
+    padding: 20px;
+  }
+  form .form-group {
+    margin-bottom: 1rem;
+  }
+  form .form-control {
+    /* display: block; */
+    width: 100%;
+    padding: 0.375rem 0.7rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    border: none; 
+    
+  }

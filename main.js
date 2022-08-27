@@ -43,7 +43,9 @@ lat+"&lon=" +lon+"&appid=" + apiKey)
   console.log(description2);
 
   const  temp2=data.list[0].main.temp;
+  const nuevo2= (temp2- 273.15).toFixed(2)
 
+  console.log(nuevo2);
   
   const humidity2  = data.list[0].main.humidity;
   const speed2 = data.list[0].wind;
@@ -51,13 +53,13 @@ lat+"&lon=" +lon+"&appid=" + apiKey)
   document.querySelector(".icon2").src =
     "https://openweathermap.org/img/wn/" + icon2 + ".png";
   document.querySelector(".description").innerText = description2;
-  document.querySelector(".temp2").innerText =temp2 + "°K";
+  document.querySelector(".temp2").innerText =nuevo2+ "°C";
   document.querySelector(".humidity2").innerText =
     "Humidity: " + humidity2 + "%";
   document.querySelector(".wind2").innerText =
     "Wind speed: " + speed2 + " km/h";
   document.querySelector(".weather").classList.remove("loading");
-  document.body.style.backgroundImage =
+  document.getElementById("contact").style.backgroundImage =
     "url('https://source.unsplash.com/1600x900/?" + name2 + "')";
 }
 
